@@ -58,3 +58,26 @@ button:hover {
 h1.temp {
   margin: 0;
 }
+
+.description {
+  text-transform: capitalize;
+  margin-left: 0.2em;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.weather.loading {
+  visibility: hidden;
+  max-height: 20px;
+  position: relative;
+}
+
+.weather.loading::after {
+  visibility: visible;
+  content: "Loading.....";
+  position: absolute;
+  top: 0;
+}
